@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Shops - Vendor Hub</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="Header">
+        <div class="container">
+            <div class="navbar">
+                <div class="home-logo">
+                    <img src="images/Vendor-hub.jpg" width="130px">
+                </div>
+                <nav>
+                    <ul id="MenuItems" class="MenuItems2">
+                        <li><a href="index.html">WELCOME PAGE</a></li>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="shops.html">SHOPS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        <div class="animate">
+            <h1 class="slide-left">Why Choose<br>Vendor Hub?</h1>
+            <p class="slide-left"> Vendor Hub's sole purpose is to connect many buyers and sellers across campus and
+                make them informed of
+                products
+                near them.
+                Vendors are able to locate their target market.<br>
+                Buyers are able to find exactly what they are looking for and cut down on delivery costs.
+            </p>
+        </div>
+    </div>
+
+    <!----- footer ------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for Android or ios mobile.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/Vendor-hub.jpg">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of
+                        Online Shopping Available To Every Student.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Vendor Hub</p>
+        </div>
+    </div>
+
+    <!------- js for menu toggle -------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
